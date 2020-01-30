@@ -1,0 +1,296 @@
+/*-- **************** --*/
+/*--                  --*/
+/*-- ESTILOS GLOBALES --*/
+/*--                  --*/
+/*-- **************** --*/
+
+/*--   * | HTML | BODY   --*/
+*,*:before,*:after{
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  margin:0;
+  padding:0;
+  border:0;
+}
+html, body{
+  height:100%;
+  min-height:100%;
+  font-family:"Gotham-Light";
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  image-rendering: optimizeSpeed;
+  image-rendering: optimizeQuality;
+}
+body{
+  width:100%;
+  min-width:320px;
+  line-height: 1.531;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*--   LINKS   --*/
+a{
+  word-wrap:break-word;
+  text-decoration:none;
+  outline:0;
+  color:#000;
+}
+a:active{
+  color:inherit;
+}
+a:link{
+  text-decoration:none;
+}
+
+/* QUITA ESTILOS PREDETERMINADOS EN 'IPAD' Y 'IPHONE' */
+button,
+input:not([type="radio"]):not([type="checkbox"]){
+    -webkit-appearance: none !important;
+    /*-webkit-border-radius: 0;  DANGEROUS NAVEGADORES*/
+}
+
+/*--  RESET -> INPUT & TEXTAREA  --*/
+input,
+textarea{
+  background:transparent;
+  outline:0;
+  font-family:Gotham-Light;
+}
+
+/*--  LISTAS  --*/
+ul,
+ul ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+ul li {
+  position:relative;
+}
+
+/*--  Sólo para trabajos con 'play framework'
+dl,
+dl > dd{
+  width:100%;
+  height:100%;
+  display:block;
+}
+dt{
+  display:none;
+}
+--*/
+
+/*-- IMAGENES --*/
+img[src$=".gif"],
+img[src$=".png"],
+img[src$=".jpg"]{
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering: -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*--  CLEARFIX  --*/
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--  PARA QUE NO PUEDAS SUBRAYAR CON EL RATÓN LOS ELEMENTOS Y NO APAREZCA LUZ AZUL AL CLICAR LOS ELEMENTOS DESDE EL MVL  --*/
+.unselectable{
+  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*--  BLOQUES CONTENEDOR  --*/
+.bloque_contenedor1600,
+.bloque_contenedor1400,
+.bloque_contenedor1200,
+.bloque_contenedor{
+  width:100%;
+  margin:auto;
+  height:100%;
+  float:none;
+  position:relative;
+}
+.bloque_contenedor1600{
+  max-width:1600px;
+}
+.bloque_contenedor1400{
+  max-width:1400px;
+}
+.bloque_contenedor1200,
+.bloque_contenedor{
+  max-width:1200px;
+}
+
+
+/*-- COOKIES MESSAGE --*/
+.cookies_message{
+  width:100%;
+  height:auto;
+  padding:15px 10px;
+  text-align:center;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#fff;
+  border:1px solid rgb(28, 28, 28);
+  z-index:9999;
+}
+.cookies_message span{
+  font-size:13px;
+  color:rgb(28, 28, 28);
+}
+.cookies_message span a{
+  text-decoration:underline;
+  color:rgb(28, 28, 28);
+}
+.aceptar_cookies{
+  width:90px;
+  height:30px;
+  background:transparent;
+  border:1px solid rgb(28, 28, 28);
+  display:inline-block;
+  margin-left:15px;
+  cursor:pointer;
+}
+.aceptar_cookies:hover{
+  background:rgb(28, 28, 28);
+}
+.aceptar_cookies:hover span{
+  color:#fff;
+}
+.aceptar_cookies span{
+  font-size:14px;
+  color:rgb(28, 28, 28);
+  line-height:26px;
+  text-align:center;
+  font-family:"Gotham-Light";
+}
+
+
+/*-- Error 404 --*/
+.error404container{
+  width:100%;
+  height:100%;
+  display:table;
+}
+.error404{
+  width:100%;
+  max-width:1085px;
+  height:auto;
+  padding-bottom:40px;
+  margin:60px auto 0 auto;
+}
+.error404 h1{
+  font-size:150px;
+  font-weight:700;
+  text-align:center;
+  color:#000;
+  letter-spacing:5px;
+}
+.error404 h2{
+  font-size:30px;
+  text-align:center;
+  color:#000;
+  font-weight:400;
+  letter-spacing:3px;
+}
+.error404 p{
+  width:74%;
+  margin:60px auto 0 auto;
+  font-size:22px;
+  text-align:center;
+  color:#000;
+  line-height:30px;
+}
+
+
+.proyectos404{
+  width:100%;
+  max-width:1085px;
+  height:auto;
+  margin:auto;
+  padding-bottom:60px;
+}
+.proyecto404{
+  width:260px;
+  height:260px;
+  overflow:hidden;
+  float:left;
+  margin-top:15px;
+  margin-right:15px;
+}
+.proyecto404:last-child{
+  margin-right:0;
+}
+.proyecto404 img{
+  width:100%;
+  height:100%;
+}
+
+
+@media screen and (max-width:1100px){
+
+  .proyectos404{
+    max-width:885px;
+  }
+  .proyecto404{
+    width:210px;
+    height:210px;
+  }
+
+}/*-- 1100px --*/
+
+
+@media screen and (max-width:968px){
+
+  .proyectos404{
+    max-width:615px;
+  }
+  .proyecto404{
+    width:300px;
+    height:300px;
+  }
+  .proyecto404:nth-child(odd){
+    margin-right:15px;
+  }
+  .proyecto404:nth-child(even){
+    margin-right:0;
+  }
+
+}/*-- 968px --*/
+
+
+@media screen and (max-width:650px){
+
+  .proyectos404{
+    max-width:300px;
+  }
+  .proyecto404{
+    margin-left:0;
+    margin-right:0;
+  }
+
+}/*-- 650px --*/
